@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+# 单独的文件
+car.csv
+titanic.csv
+
 # Distribution / packaging
 .Python
 build/
