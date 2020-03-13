@@ -16,7 +16,7 @@
 
 ## 二、大类风格因子定义明细
 ### （一）大类因子：beta   
-####小类因子：BETA
+#### 小类因子：BETA
 
 $r_i=\alpha +\beta r_m+e_i$
 
@@ -27,7 +27,7 @@ $r_i=\alpha +\beta r_m+e_i$
 ·需要的数据：个股日收益率、沪深300指数日收益率
 
 ### （二）大类因子：Momentum  
-####小类因子 ：RSTR
+#### 小类因子 ：RSTR
 
 $RSTR=\displaystyle \sum_{t=L}^{T+L} w_t[ln(1+r_t)]$   其中T=500，L=21
 
@@ -38,7 +38,7 @@ $w_t=2^{(t-T-1)/H} (t=L,L+1,...,T)$
 ·需要的数据：个股日收益率
 
 ### （三）大类因子: Size  
-####小类因子：LNCAP
+#### 小类因子：LNCAP
 
 $LNCAP=LN(total\underline\: market\underline\: capitalization)$
 
