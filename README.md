@@ -6,31 +6,31 @@
 | 数据名称                                     | 变量名称          |
 | -------------------------------------------- | ----------------- |
 | **Part 1**-**基础数据**                      |                   |
-| 前收盘价（日）                               | close_pre         |
-| 开盘价（日）                                 | open              |
-| 最高价（日）                                 | high              |
-| 最低价（日）                                 | low               |
-| 交易量（日，手）                             | volume            |
-| 交易金额（日，千元）                         | amount            |
-| 交易均价（日，成交金额/成交量）              | vwap              |
-| 交易状态（日）（0 停牌；1 交易；NaN 未上市） | state             |
-| 所在行业（日）                               | industry          |
+| 前收盘价（日）                               | s_close_pres         |
+| 开盘价（日）                                 | s_opens              |
+| 最高价（日）                                 | s_highs              |
+| 最低价（日）                                 | s_lows               |
+| 交易量（日，手）                             | s_volumes            |
+| 交易金额（日，千元）                         | s_amounts            |
+| 交易均价（日，成交金额/成交量）              | s_vwaps              |
+| 交易状态（日）（0 停牌；1 交易；NaN 未上市） | s_states             |
+| 所在行业（日）                               | s_industrys          |
 | **Part 2-计算风格因子所需数据**              |                   |
-| 总市值（日，万元）                           | mv_total          |
-| 流通市值（日，万元）                         | mv_current        |
-| 总股本（日，万股）                           | stock_total       |
-| 流通股本（日，万股）                         | stock_current     |
-| 总资产（日，元）                             | asset             |
-| 总负债（日，元）                             | liability         |
-| 长期负债（日，元）                           | debt_long         |
-| 所有者权益（日，元）                         | equity            |
-| 普通股（股数）→股本（日，元）                | stock_common      |
-| 现金收益→CFO（日，元）                       | earning_cash      |
-| 营业总收入（日，元）                         | sale              |
-| 净利润（日，元）                             | ni                |
-| 归母净利润（日，元）                         | ni_attr           |
-| 一致预期净利润的**变化**                     | ni_expect_change  |
-| 一致预期基本EPS的**变化**                    | eps_expect_change |
+| 总市值（日，万元）                           | s_mv_totals          |
+| 流通市值（日，万元）                         | s_mv_currents        |
+| 总股本（日，万股）                           | s_stock_totals       |
+| 流通股本（日，万股）                         | s_stock_currents     |
+| 总资产（日，元）                             | s_assets             |
+| 总负债（日，元）                             | s_liabilitys         |
+| 长期负债（日，元）                           | s_debt_longs         |
+| 所有者权益（日，元）                         | s_equitys            |
+| 普通股（股数）→股本（日，元）                | s_stock_commons      |
+| 现金收益→CFO（日，元）                       | s_earning_cashs      |
+| 营业总收入（日，元）                         | s_sales              |
+| 净利润（日，元）                             | s_nis                |
+| 归母净利润（日，元）                         | s_ni_attrs           |
+| 一致预期净利润的**变化**                     | s_ni_expect_changes  |
+| 一致预期基本EPS的**变化**                    | s_eps_expect_changes |
 
 
 
