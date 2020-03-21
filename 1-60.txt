@@ -1,0 +1,71 @@
+Alpha 001
+(-1 * CORR(
+					RANK(
+									DELTA(LOG(VOLUME), 1)
+								), 
+					RANK(
+									((CLOSE - OPEN) / OPEN)
+								),
+					6
+					)
+)
+
+Alpha 002
+-1 * DELTA(
+						(
+							((CLOSE - LOW) - (HIGH - CLOSE)) / (HIGH - LOW)
+						),
+						1
+					)
+
+
+Alpha 003
+SUM(
+			(
+				CLOSE=DELAY(CLOSE,1)?
+					0:
+					CLOSE-(
+										CLOSE>DELAY(CLOSE,1)?
+											MIN(LOW,DELAY(CLOSE,1)):
+											MAX(HIGH,DELAY(CLOSE,1))
+									)
+			),
+			6
+		)
+
+Alpha 004
+
+((SUM(CLOSE, 8) / 8) + STD(CLOSE, 8))  < (SUM(CLOSE, 2) / 2)? 
+    -1:
+	(
+		(
+			(SUM(CLOSE, 2) / 2) < ((SUM(CLOSE, 8) / 8) - STD(CLOSE, 8))
+		)?
+			1:
+			(
+				(
+					(1<(VOLUME / MEAN(VOLUME,20)))||
+					((VOLUME / MEAN(VOLUME,20)) == 1)
+				)?
+					1:-1
+			)
+	)
+
+Alpha 005
+-1 * TSMAX(
+						CORR(
+										TSRANK(VOLUME, 5),
+										TSRANK(HIGH, 5), 5
+									),
+						3
+					)
+
+Alpha 006
+-1¡ÁRANK(
+					SIGN(
+									DELTA(
+													((OPEN * 0.85) + (HIGH * 0.15)),
+													4
+												)
+								)
+				)
