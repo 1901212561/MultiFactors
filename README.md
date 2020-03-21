@@ -10,6 +10,12 @@
 | 开盘价（日）                                 | s_opens              |
 | 最高价（日）                                 | s_highs              |
 | 最低价（日）                                 | s_lows               |
+| 收盘价（日）                                 | s_closes             |
+| 指数前收盘价（日）                               | i_close_pres         |
+| 指数开盘价（日）                                 | i_opens              |
+| 指数最高价（日）                                 | i_highs              |
+| 指数最低价（日）                                 | i_lows               |
+| 指数收盘价（日）                                 | i_closes             |
 | 交易量（日，手）                             | s_volumes            |
 | 交易金额（日，千元）                         | s_amounts            |
 | 交易均价（日，成交金额/成交量）              | s_vwaps              |
